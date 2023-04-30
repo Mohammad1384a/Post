@@ -1,0 +1,94 @@
+.postPage {
+  width:95%;
+  height:100vh;
+  margin:0 auto;
+  display:grid;
+  grid-template-rows:15% 80%;
+}
+
+.postPage nav{
+  display:grid;
+  width:100%;
+  grid-template-columns:30% 60%;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+.postPage ul{
+  list-style-type:none;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-left:-5vw;
+}
+
+.postPage li:hover{
+  opacity:.6;
+  cursor:pointer;
+}
+
+.postPage ul span{
+  margin-right:-7vw;
+}
+
+.posts{
+  width:65%;
+  height:90vh;
+  justify-self:right;
+  display:grid;
+  grid-template-rows:45% 45%;
+  grid-template-columns:30% 30% 30%;
+  justify-content:space-around;
+  align-content:space-around;
+}
+
+.posts>section{
+  border-radius:5vh;
+  cursor:pointer;
+  display:grid;
+  grid-template-rows:70% 30%;
+}
+
+.posts img{
+  width:100%;
+  height:100%;
+  border-radius:5vh;
+}
+
+.description {
+  display:flex;
+  flex-direction:column;
+  align-content:space-around;
+}
+
+.description section{
+  width:85%;
+  height:55%;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  font-size:small;
+  align-items:center;
+}
+
+.description section div{
+  display:flex;
+  width:55%;
+  font-size:small;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.description h5{
+  margin:0;
+  height:45%;
+  padding:1vh 0 0 1vw;
+}
+
+.description section span{
+  width:12px;
+  height:12px;
+  border-radius:100%;
+  background-color:black;
+}
