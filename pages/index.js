@@ -35,6 +35,7 @@ const Index = () => {
           control:(state)=>Styles.Select
         }}
         instanceId='Category'
+        width="100%"
       />
       <ul>
         <span>{<HiOutlineAdjustmentsVertical/>}</span>
@@ -50,7 +51,7 @@ const Index = () => {
         <img src={`/images/${item.category}.png`} alt={item.category}/>
         <div className={Styles.description}>
           <h5>
-           this is sth {item.title}
+            this is test
           </h5>
           <section>
             <div>

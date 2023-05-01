@@ -1,7 +1,7 @@
 .postPage {
   width:95%;
-  height:100vh;
   margin:0 auto;
+  padding:2vh;
   display:grid;
   grid-template-rows:15% 80%;
 }
@@ -21,6 +21,7 @@
   justify-content:space-around;
   align-items:center;
   margin-left:-5vw;
+  font-size:medium;
 }
 
 .postPage li:hover{
@@ -33,44 +34,47 @@
 }
 
 .posts{
-  width:65%;
-  height:90vh;
+  width:70%;
   justify-self:right;
   display:grid;
-  grid-template-rows:45% 45%;
   grid-template-columns:30% 30% 30%;
+  grid-row-gap:5vh;
   justify-content:space-around;
+  margin-top:2vh;
   align-content:space-around;
 }
 
 .posts>section{
   border-radius:5vh;
   cursor:pointer;
-  display:grid;
-  grid-template-rows:70% 30%;
+  height:45vh;
+  display:flex;
+  flex-direction:column;
+  background-color:#64748b;
 }
 
-.posts img{
+.posts section img{
   width:100%;
-  height:100%;
+  height:60%;
   border-radius:5vh;
 }
 
 .description {
   display:flex;
-  flex-direction:column;
-  align-content:space-around;
+  align-content:space-evenly;
+  flex-wrap:wrap;
+  height:40%;
 }
 
 .description section{
   width:85%;
-  height:55%;
   margin:0 auto;
   display:flex;
   justify-content:space-between;
   font-size:small;
   align-items:center;
 }
+
 
 .description section div{
   display:flex;
@@ -81,9 +85,8 @@
 }
 
 .description h5{
-  margin:0;
-  height:45%;
-  padding:1vh 0 0 1vw;
+  margin:0 auto;
+  width:90%;
 }
 
 .description section span{
@@ -91,4 +94,18 @@
   height:12px;
   border-radius:100%;
   background-color:black;
+}
+
+.description section>p{
+  background-color:#60a5fa;
+  padding:1vh;
+  border-radius:5vh;
+}
+
+.description section p{
+  margin:0;
+}
+
+.description section>p:hover{
+  background-color:#3b82f6;
 }
